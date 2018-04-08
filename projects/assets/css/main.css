@@ -1167,7 +1167,6 @@
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 70vh;
-		background-image: url("../../images/banner.jpg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1208,7 +1207,7 @@
 			}
 
 		#banner p {
-			color: rgba(255, 255, 255, 0.85);
+			color: #202024;
 			font-size: 1.5em;
 			font-weight: 300;
 		}
@@ -1289,7 +1288,7 @@
 			-ms-transition-delay: 1s;
 			transition-delay: 1s;
 			content: '';
-			background-color: #42424f;
+			background-color: #202024;
 			display: block;
 			height: 100%;
 			left: 0;
@@ -1365,7 +1364,7 @@
 
 	#footer {
 		padding: 4em 0 2em 0;
-		background-color: #1b1b1f;
+		background-color: #202024;
 		text-align: center;
 	}
 
