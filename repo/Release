@@ -1,0 +1,8 @@
+Origin: The Duat Public Repository
+Label: The Duat Public Repo
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: The Duat Public Example Repo (This is all a test! Don't say I copied anyone!)

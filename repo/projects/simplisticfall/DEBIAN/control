@@ -1,0 +1,10 @@
+Package: com.duat.simplistic
+Name: SimplisticFall
+Depends: com.anemonetheming.anemone
+Version: 0.1
+Architecture: iphoneos-arm
+Description:  An Anemone theme made up of other themes.
+Maintainer: The Duat <theavatar010@gmail.com>
+Author: The Duat <theavatar010@gmail.com>
+Sponsor: None
+Section: Themes
