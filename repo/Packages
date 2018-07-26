@@ -5,10 +5,10 @@ Maintainer: The Duat <theavatar010@gmail.com>
 Depends: com.anemonetheming.anemone
 Architecture: iphoneos-arm
 Filename: debs//com.duat.simplistic_0.1_iphoneos-arm.deb
-Size: 1850502
-MD5sum: d28188dedc759272d02ef0656ddc6102
+Size: 2570856
+MD5sum: 3dc89d11b216c5c77cdc3fe5763096b6
 Description: An Anemone theme made up of other themes.
+name: SimplisticFall
 sponsor: None
 author: The Duat <theavatar010@gmail.com>
-name: SimplisticFall
 
