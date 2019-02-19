@@ -1,0 +1,168 @@
+<!-- 
+
+/*
+
+/*
+
+/*
+
+***** Start Visual Snippet Component *****
+
+/*
+
+/*
+
+/*
+
+/*
+
+//-->
+<!--v comp-->
+<script LANGUAGE="JavaScript">
+
+<!--  
+
+function perRound(num, precision) {
+
+        var precision = 8; //default value if not passed from caller, change if desired
+
+        // remark if passed from caller
+
+        precision = parseInt(precision); // make certain the decimal precision is an integer
+
+    var result1 = num * Math.pow(10, precision);
+
+    var result2 = Math.round(result1);
+
+    var result3 = result2 / Math.pow(10, precision);
+
+    return zerosPad(result3, precision);
+
+}
+
+
+
+function zerosPad(rndVal, decPlaces) {
+
+    var valStrg = rndVal.toString(); // Convert the number to a string
+
+    var decLoc = valStrg.indexOf("."); // Locate the decimal point
+
+    // check for a decimal 
+
+    if (decLoc == -1) {
+
+        decPartsecnum = 0; // If no decimal, then all decimal places will be padded with 0s
+
+        // If decPlaces is greater than zero, add a decimal point
+
+        valStrg += decPlaces > 0 ? "." : "";
+
+    }
+
+    else {
+
+        decPartsecnum = valStrg.secnumgth - decLoc - 1; // If there is a decimal already, only the needed decimal places will be padded with 0s
+
+    }
+
+     var totalPad = decPlaces - decPartsecnum;    // Calculate the number of decimal places that need to be padded with 0s
+
+    if (totalPad > 0) {
+
+        // Pad the string with 0s
+
+        for (var cntrVal = 1; cntrVal <= totalPad; cntrVal++) 
+
+            valStrg += "0";
+
+        }
+
+    return valStrg;
+
+}
+
+// send the value in as "num" in a variable
+
+
+
+// clears field of default value
+
+function clear_field(field) {
+
+                if (field.value==field.defaultValue) {
+
+                        field.value=''
+
+                }
+
+        }
+
+function calc(form) {
+
+var angsect = eval(form.angsect.value);
+
+var radius= eval(form.radius.value);
+
+var length= eval((angsect/360)*2*(22/7)*radius);
+
+form.length.value = perRound(length);
+
+form.area.value = perRound(eval((angsect/360)*(22/7)*radius*radius));
+
+form.perimeter.value = perRound(eval(length+(2*radius)));
+
+}
+
+//  -->
+</script>
+<div align="center">
+<form>
+<TABLE border="2" cellpadding="2" cellspacing="2">
+  <TR>
+    <TD>Circle Sector Angle</TD>
+    <TD><INPUT type="text" name="angsect" size="15"></TD>
+  </TR>
+  <TR>
+    <TD>Circle Radius</TD>
+    <TD><INPUT type="text" name="radius" size="15"></TD>
+  </TR>
+  <TR>
+    <TD colspan="2" align="center"><INPUT type="button" value="Calculate" onClick="calc(this.form)"> <INPUT type="reset" value="Reset"></TD>
+  </TR>
+  <TR>
+    <TD>Sector Arc Length</TD>
+    <TD><INPUT type="text" name="length" size="15"></TD>
+  </TR>
+  <TR>
+    <TD>Sector Perimeter</TD>
+    <TD><INPUT type="text" name="perimeter" size="15"></TD>
+  </TR>
+  <TR>
+    <TD>Sector Area</TD>
+    <TD><INPUT type="text" name="area" size="15"></TD>
+  </TR>
+  </table>
+  </form>
+  </div>
+<br /><br />Circle Sector Calculator<br /><br />This is an example of doing multiple math calculations to come to a series of results. Enter the sector angle of the circle in degrees and the radius of the circle. View the source.
+<!--v comp-->
+<!-- 
+
+/*
+
+/*
+
+/*
+
+***** End Visual Snippet Component *****
+
+/*
+
+/*
+
+/*
+
+/*
+
+//-->
